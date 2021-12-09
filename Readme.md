@@ -1,6 +1,6 @@
-#Badh CRUD operations
+# Bash CRUD operations
 
-#Description
+# Description
 Create a comakeit employees record with details in the format: CMI_ID:Name:Surname:Experience:Customer
 There should not be a duplicate record.
 Script should have following menu options:
