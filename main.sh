@@ -25,30 +25,43 @@ menu(){
                 echo "Adding Record"
                 `/home/siva/bash-tasks/excersire3/./add_record.sh`
                 while true; do
-                    read -p "Are you Sure to Add More records [Y/y::N/n]: " yn
+                    read -p "Do you want to Add More records [Y/y::N/n]: " yn
                     case $yn in
                         [Yy]* ) /home/siva/bash-tasks/excersire3/./add_record.sh ;;
                         [Nn]* ) break;;
-                        * ) echo "Please answer yes or no.";;
                     esac
                 done
                 ;;
             "EDIT Record")
                 echo "Editing Record"
-                /home/siva/bash-tasks/excersire3/./edit_record.sh
-                ;;
+                while true; do
+                    read -p "Do you want to edit more records [Y/y::N/n]: " yn
+                    case $yn in
+                        [Yy]* ) /home/siva/bash-tasks/excersire3/./edit_record.sh ;;
+                        [Nn]* ) break;;
+                    esac
+                done
             "Delete Record")
                 echo "Deleting Record"
-                /home/siva/bash-tasks/excersire3/./delete_record.sh
-                ;;
+                while true; do
+                    read -p "Do you want to edit more records [Y/y::N/n]: " yn
+                    case $yn in
+                        [Yy]* ) /home/siva/bash-tasks/excersire3/./delete_record.sh ;;
+                        [Nn]* ) break;;
+                    esac
+                done
             "Search Record")
                 echo "Searching for Record"
-                /home/siva/bash-tasks/excersire3/./search_record.sh
-                ;;
+                while true; do
+                    read -p "Do you want to edit more records [Y/y::N/n]: " yn
+                    case $yn in
+                        [Yy]* ) /home/siva/bash-tasks/excersire3/./search_record.sh ;;
+                        [Nn]* ) break;;
+                    esac
+                done
             "Exit")
                 echo "Exiting !"
-                break
-                ;;
+                break;;
             *) echo "invalid option $opt";;
         esac
     done
