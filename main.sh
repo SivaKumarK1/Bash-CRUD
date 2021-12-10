@@ -15,7 +15,7 @@ menu(){
                 while true; do
                 read -p "Are you Sure to Continue [Y/y::N/n]: " yn
                     case $yn in
-                        [Yy]* ) cat /home/siva/bash-tasks/excersire3/Records.txt;;
+                        [Yy]* ) cat Records.txt;;
                         [Nn]* ) break;;
                         * ) echo "Please answer yes or no.";;
                     esac
@@ -23,11 +23,11 @@ menu(){
                 ;;
             "ADD Record")
                 echo "Adding Record"
-                `/home/siva/bash-tasks/excersire3/./add_record.sh`
+                add_record.sh
                 while true; do
                     read -p "Do you want to Add More records [Y/y::N/n]: " yn
                     case $yn in
-                        [Yy]* ) /home/siva/bash-tasks/excersire3/./add_record.sh ;;
+                        [Yy]* ) add_record.sh ;;
                         [Nn]* ) break;;
                     esac
                 done
@@ -37,7 +37,7 @@ menu(){
                 while true; do
                     read -p "Do you want to edit more records [Y/y::N/n]: " yn
                     case $yn in
-                        [Yy]* ) /home/siva/bash-tasks/excersire3/./edit_record.sh ;;
+                        [Yy]* ) edit_record.sh ;;
                         [Nn]* ) break;;
                     esac
                 done
@@ -47,7 +47,7 @@ menu(){
                 while true; do
                     read -p "Do you want to edit more records [Y/y::N/n]: " yn
                     case $yn in
-                        [Yy]* ) /home/siva/bash-tasks/excersire3/./delete_record.sh ;;
+                        [Yy]* ) delete_record.sh ;;
                         [Nn]* ) break;;
                     esac
                 done
@@ -57,7 +57,7 @@ menu(){
                 while true; do
                     read -p "Do you want to edit more records [Y/y::N/n]: " yn
                     case $yn in
-                        [Yy]* ) /home/siva/bash-tasks/excersire3/./search_record.sh ;;
+                        [Yy]* ) search_record.sh ;;
                         [Nn]* ) break;;
                     esac
                 done
