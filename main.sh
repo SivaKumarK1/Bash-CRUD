@@ -45,7 +45,7 @@ menu(){
             "Delete Record")
                 echo "Deleting Record"
                 while true; do
-                    read -p "Do you want to edit more records [Y/y::N/n]: " yn
+                    read -p "Do you want to delete more records [Y/y::N/n]: " yn
                     case $yn in
                         [Yy]* ) delete_record.sh ;;
                         [Nn]* ) break;;
@@ -55,7 +55,7 @@ menu(){
             "Search Record")
                 echo "Searching for Record"
                 while true; do
-                    read -p "Do you want to edit more records [Y/y::N/n]: " yn
+                    read -p "Do you want to Search for more records [Y/y::N/n]: " yn
                     case $yn in
                         [Yy]* ) search_record.sh ;;
                         [Nn]* ) break;;

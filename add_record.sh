@@ -20,7 +20,7 @@ add_record(){
             fi
         else
             echo "ID already exists !"
-            exit 0
+            exit 1
         fi
     done
 }
