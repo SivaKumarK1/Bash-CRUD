@@ -61,7 +61,7 @@ menu(){
                         [Nn]* ) break;;
                     esac
                 done
-                ,,
+                ;;
             "Exit")
                 echo "Exiting !"
                 break;;
