@@ -41,6 +41,7 @@ menu(){
                         [Nn]* ) break;;
                     esac
                 done
+                ;;
             "Delete Record")
                 echo "Deleting Record"
                 while true; do
@@ -50,6 +51,7 @@ menu(){
                         [Nn]* ) break;;
                     esac
                 done
+                ;;
             "Search Record")
                 echo "Searching for Record"
                 while true; do
@@ -59,6 +61,7 @@ menu(){
                         [Nn]* ) break;;
                     esac
                 done
+                ,,
             "Exit")
                 echo "Exiting !"
                 break;;
