@@ -5,17 +5,19 @@
 
 search_record(){
     
+    # cat Records.txt | grep -e '[[:digit:]]:' | cut -d ':' -f 1 >> id.txt
     read -p "Which record do you want to Search for? Enter Id: " search_id
-    for id in " cat Records.txt | grep -e '[[:digit:]]:' | cut -d ":" -f 1 ";
-    do
-        if [ "$search_id" != "$id" ] 
-        then
-            echo "Entered Id Does Not exist! "
-            exit 1
-        else
-            cat Records.txt | grep $search_id
-        fi
-    done
+    grep -qF "$search_id" id.txt
+    if [ "$?" -eq 0 ]
+    then 
+        echo "------------------------------------------------------
+`cat Records.txt | grep $search_id`
+------------------------------------------------------"
+    else
+        echo "Entered Id Does Not exist! "
+        exit 1
+    fi
 
 }
 search_record
+

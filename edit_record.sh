@@ -4,7 +4,10 @@
 #DATEOFCREATION:: 09-12-2021
 
 edit_record(){
-    cat Records.txt | grep -e '[[:digit:]]:' 
+    
+    echo "------------------------------------------------------
+` cat Records.txt | grep -e '[[:digit:]]:' `
+------------------------------------------------------" 
     read -p "Which record do you want to edit. Enter Id: " edit_id
     while true; do
         old_data=`cat Records.txt | grep $edit_id`
