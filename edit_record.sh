@@ -6,7 +6,7 @@
 edit_record(){
     
     echo "------------------------------------------------------
-` cat Records.txt | grep -e '[[:digit:]]:' `
+` cat Records.txt | grep -e '[[:digit:]]:' `    
 ------------------------------------------------------" 
     read -p "Which record do you want to edit. Enter Id: " edit_id
     while true; do

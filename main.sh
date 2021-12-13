@@ -15,9 +15,9 @@ menu(){
                 # while true; do
                 read -p "Are you Sure to Continue [Y/y::N/n]: " yn
                     case $yn in
-                        [Yy]* ) echo 
+                        [Yy]* ) echo ""
                                 cat Records.txt
-                                echo
+                                echo ""
                                 ;;
                         [Nn]* ) break;;
                         * ) echo "Please answer yes or no.";;
