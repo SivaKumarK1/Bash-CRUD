@@ -5,6 +5,7 @@
 
 add_record(){
     ID=$(( $RANDOM % 10 + 1000 ))
+    echo $ID
     echo "------------------------------------------------------"
     read -p "Enter Name: " name
     read -p "Enter Surname: " surname
