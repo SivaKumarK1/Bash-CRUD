@@ -3,6 +3,8 @@
 #DESCRIPTION:: Comakeit Employees Record
 #DATEOFCREATION:: 09-12-2021
 
+source colors.sh
+
 search_record(){
     
     # cat Records.txt | grep -e '[[:digit:]]:' | cut -d ':' -f 1 >> id.txt

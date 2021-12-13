@@ -3,6 +3,9 @@
 #DESCRIPTION:: Comakeit Employees Record
 #DATEOFCREATION:: 09-12-2021
 
+source colors.sh
+
+
 delete_record(){
     cat Records.txt | grep -e '[[:digit:]]:'
     read -p "Which record do you want to delete. Enter Id: " delete_id

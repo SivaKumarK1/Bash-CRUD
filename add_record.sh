@@ -3,6 +3,8 @@
 #DESCRIPTION:: Comakeit Employees Record
 #DATEOFCREATION:: 09-12-2021
 
+source colors.sh
+
 add_record(){
     ID=$(( $RANDOM % 10 + 1000 ))
     echo $ID

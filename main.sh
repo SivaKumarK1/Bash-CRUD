@@ -3,8 +3,25 @@
 #DESCRIPTION:: Comakeit Employees Record
 #DATEOFCREATION:: 09-12-2021
 
+source colors.sh
+
 menu(){
 
+    echo ""
+    echo "${yellow}====================================================="
+    echo "
+     ___ __  __ ___ _    _____   _____ ___ 
+    | __|  \/  | _ \ |  / _ \ \ / / __| __|
+    | _|| |\/| |  _/ |_| (_) \ V /| _|| _| 
+    |___|_|  |_|_| |____\___/ |_| |___|___|
+
+     ___ ___ ___ ___  ___ ___  ___ 
+    | _ \ __/ __/ _ \| _ \   \/ __|
+    |   / _| (_| (_) |   / |) \__ \'
+    |_|_\___\___\___/|_|_\___/|___/
+    "
+    echo "=====================================================${remove}"
+    echo ""
     PS3='Please enter your menu choice: '
     options=("Show All Records" "ADD Record" "EDIT Record" "Delete Record" "Search Record" "Exit" )
     select opt in "${options[@]}"

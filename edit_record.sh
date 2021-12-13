@@ -3,6 +3,8 @@
 #DESCRIPTION:: Comakeit Employees Record
 #DATEOFCREATION:: 09-12-2021
 
+source colors.sh
+
 edit_record(){
     
     echo "------------------------------------------------------
